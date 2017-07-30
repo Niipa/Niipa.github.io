@@ -1,0 +1,106 @@
+2017-7-3:
+	-New skill logic added: Summer weapons (Seashell, refresing bolt, deft harpoon, melon crusher), Seal atk spd, def ploy, close def
+	-Changed hero select box to typeahead input
+
+2017-6-15:
+	-New skills added: Atk ploy, sturdy blow, firesweep lance, fire boost, panic ploy
+
+2017-6-6:
+	-Can now filter on changed damage, but same rounds and victor
+
+2017-6-4:
+	-Added Embla's Ward and Quickened Pulse
+	-Fixed Panic causing debuffs to become buffs (this whole time I thought that was how it worked)
+
+2017-5-30:
+	-Added logic for new skills: Gradivus, Dazzling Staff, Wind Boost, Grani's Shield
+	-Can now see overkill
+
+2017-5-24:
+	-Fixed stuff, I forgot what.
+	-Results loading is a little slow. Maybe looking into using React for that portion.
+
+2017-5-23:
+	-Option to view only results that changed.
+	-Export results.
+	-Custom enemy lists
+	-Import/export challenger and enemies
+	-Introduced bugs
+
+2017-5-19
+	-Added new skills: Regal Blade
+
+2017-5-15
+	-Added new skills: Ragnarok, Earth Boost, Distant Def, Wrathful Staff
+	-Added update notification
+
+2017-5-7
+	-Added absorb staff back in. When did I even delete that code?
+	-Fixed healing specials healing for more than the enemy's remaining HP
+	-Fixed S skills not actually being taken off when you switch hero
+	-Fixed defiant res not working because I was looking for the skill "resiant res"
+	-Added Siegfried.
+
+2017-4-26:
+	-Added new skills: Watersweep, Ragnell, Heavy Blade, Spur Def Res, Guard
+
+2017-4-20:
+	-Added Eckesachs.
+	-Blazed it.
+
+2017-4-16:
+	-Added rarities below 5*.
+	-Added the new skills (windsweeper, firesweep bow...)
+	-Added S skills.
+	-Added option to hide unaffecting skills from selection.
+	-Changed skill select and rules UI to fit new stuff
+	-Fixed gigantic issue with debuffs not being calculated properly that I'm astonished nobody noticed. 
+		As I understand it, debuffs are only taken off after a unit does its turn.
+		If a unit is debuffed after attacking and gets attacked on the next turn, it's still debuffed when it gets to attack again.
+	-Fixed wary fighter interactions, I think??
+
+2017-4-3:
+	-Added code and images for bunny skills.
+	-Added bunny images.
+	-Added damage taken input.
+	-Added merge bonuses.
+	-Added option to exclude healers.
+	-Added special pre-charge.
+	-Auto-calculations now take effect half a second after you stop changing a number input.
+	-Fixed breaker skills not interacting properly with skills like quick riposte and wary fighter.
+	-Fixed AOE skills not occuring before vantage
+	-Changed database model - now base stats + growth levels = max stats instead of max stats - growth values = base stats
+	-Added more variables to store enemy information so the calculator doesn't have to grab it from inputs every time
+
+2017-3-27:
+	-Fixed +/-4 boons/banes.
+	-Added calculate button. Added auto-calculate as an option.
+	-Added previous results output.
+	-Added option to flip results sort.
+
+2017-3-26:
+	Focused on fixing bugs. Next update will be focused on adding more features.
+	-Moved activehero class to new file.
+	-Reworked a lot of code from functions of a battle to functions on a hero so it didn't have to be repeated twice
+	-Fixed damage calculation rounding
+	-Fixed "Dragon" class of specials to calculate like Glacies or Ignis
+	-Fixed special charge count not being affected by weapons on first charge
+	-Fixed HP boon/bane not affecting calculations
+	-Fixed selecting "no special" causing error
+	-Fixed when blade tome damage is added to calculation (now before WTA)
+	-Fixed daggers and pain behavior (only work when user gets an attack)
+
+2017-3-25:
+	-Fixed Threaten skills from -3/-5/-7 to -3/-4/-5.
+
+2017-3-24:
+	Finished first draft. Known issues: 
+	-Unsure of which skills healers can learn
+	-Boons and banes all 3HP, but some heroes have random 4HP boons/banes and I don't trust the sources to be accurate yet on which ones they are
+	-Rounding errors
+	-Unsure of whether Renewal acts before Defiant skills
+	-No debuffs input...mostly because I didn't realize I needed it separate from buffs until I has already made everything fit nicely!
+	-Images are terrible resolution
+
+2017-3-16:
+	Started project.
